@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "client-dating",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
