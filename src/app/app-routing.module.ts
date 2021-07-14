@@ -9,9 +9,18 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },  {
+  },
+  {
     path: 'step-one',
     loadChildren: () => import('./step-one/step-one.module').then( m => m.StepOnePageModule)
+  },
+  {
+    path: 'step-two',
+    loadChildren: () => import('./step-two/step-two.module').then( m => m.StepTwoPageModule)
+  },
+  {
+    path: 'step-three',
+    loadChildren: () => import('./step-three/step-three.module').then( m => m.StepThreePageModule)
   }
 
 
