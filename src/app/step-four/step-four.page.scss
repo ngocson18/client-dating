@@ -1,0 +1,30 @@
+@use '../../theme/base.scss';
+@import '../../theme/mixin.scss';
+
+.step-four {
+    height: 100%;
+    background-color: base.$white;
+    &__title--sub {
+        @include font-color($font-size: 24px, $font-family: base.$font_poppin--bold, $color: base.$black);
+        margin: 25px 0 27px 0;
+    }
+
+    &__add {
+        @include font-color($font-size: 16px, $font-family: base.$font_poppin, $color: base.$black);
+    }
+    &__continue {
+        @include font-color($font-size: 16px, $font-family: base.$font_poppin--bold, $color: base.$white);
+        border-radius: 40px;
+        background-color: base.$base_color;
+        height: 45px;
+        cursor: pointer;
+        margin: 0 0 30px 0;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .deactive {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

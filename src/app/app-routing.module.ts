@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'step-three',
     loadChildren: () => import('./step-three/step-three.module').then( m => m.StepThreePageModule)
+  },  {
+    path: 'step-four',
+    loadChildren: () => import('./step-four/step-four.module').then( m => m.StepFourPageModule)
   }
+
 
 
 ];
